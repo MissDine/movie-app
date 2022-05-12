@@ -7,7 +7,7 @@ import SearchBox from './components/SearchBox';
 import AddFavourites from './components/AddFavourites';
 import RemoveFavourites from './components/RemoveFavourites';
 
-const App = () => {
+/*const App = () => {
 	const [movies, setMovies] = useState([]);
 	const [favourites, setFavourites] = useState([]);
 	const [searchValue, setSearchValue] = useState('');
@@ -27,7 +27,30 @@ const App = () => {
 
 	useEffect(() => {
 		getMovieRequest(searchValue);
-	}, [searchValue]);
+	}, [searchValue]);*/
+	const App = () => {
+		const [movies, setMovies] = useState([]);
+		const [favourites, setFavourites] = useState([]);
+		const [searchValue, setSearchValue] = useState('');
+	
+		const getMovieRequest = async (searchValue) => {
+			const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=4599ed4c`;
+	
+			const response = await fetch(url);
+			const responseJson = await response.json();
+	
+			if (responseJson.Search) {
+				setMovies(responseJson.Search);
+			}
+			/*if (responseJson.Title) {
+				setMovies(preMovies => [...preMovies, responseJson]);
+			}*/
+		};
+	
+		useEffect(() => {
+			getMovieRequest(searchValue);
+		}, [searchValue]);
+	
 
 	useEffect(() => {
 		const movieFavourites = JSON.parse(
