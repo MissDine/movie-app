@@ -2,12 +2,12 @@ import React from 'react';
 
 const SearchBox = (props) => {
 	return (
-		<div className='col col-sm-4'>
+		<div className='search'>
 			<input
-				className='form-control'
+				className='form-control my-input'
 				value={props.value}
 				onChange={(event) => props.setSearchValue(event.target.value)}
-				placeholder='Type to search...'
+				placeholder='  &#128269;  Type to search...'
 			></input>
 		</div>
 	);

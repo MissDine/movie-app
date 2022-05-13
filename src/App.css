@@ -1,35 +1,24 @@
 body {
-	background: #141414;
-	color: #63edeb;
+	background: #3e2f48;
+	color: #ffffff;
+}
+.Poster-image{
+	width: 300px;
+	height: 400px;
+
+}
+.App{
+	background-image: url("../public/vecteezy_hud-futuristic-display-with-detail-sci-fi-monitor-screen_6799612.jpg");
+	background-position: center;
+	background-size: cover;
+
 }
 
-.movie-app > .row {
-	overflow-x: auto;
-	
-}
+.my-input{
+	width: 50%;
 
-.image-container {
-	position: relative;
-	transition: transform 0.2s;
 }
-
-.image-container:hover {
-	cursor: pointer;
-	transform: scale(1.1);
-}
-
-.image-container:hover .overlay {
-	opacity: 1;
-}
-
-.overlay {
-	position: absolute;
-	background: rgba(13, 14, 11, 0.8);
-	width: 100%;
-	transition: 0.5s ease;
-	opacity: 0;
-	bottom: 0;
-	font-size: 20px;
-	padding: 20px;
-	text-align: center;
+.search{
+	width: 50%;
+	margin: 0 auto;
 }
