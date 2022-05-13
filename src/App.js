@@ -21,9 +21,6 @@ import RemoveFavourites from './components/RemoveFavourites';
 			if (responseJson.Search) {
 				setMovies(responseJson.Search);
 			}
-			/*if (responseJson.Title) {
-				setMovies(preMovies => [...preMovies, responseJson]);
-			}*/
 		};
 	
 		useEffect(() => {
