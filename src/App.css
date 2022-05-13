@@ -1,11 +1,15 @@
-body {
-	background: #3e2f48;
-	color: #ffffff;
-}
+
 .Poster-image{
 	width: 300px;
 	height: 400px;
 
+}
+.fav{
+	font-size: 20px;
+	font-weight: 800;
+	font-style: normal;
+	color: orangered;
+	font-family: 'Times New Roman', Times, serif;
 }
 .App{
 	background-image: url("../public/efe-kurnaz-RnCPiXixooY-unsplash.jpg");

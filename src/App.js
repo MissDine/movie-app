@@ -58,8 +58,8 @@ import RemoveFavourites from './components/RemoveFavourites';
 	};
 
 	return (
-		<div className='container-fluid App '>
-			<div className='row'>
+		<div className='App'>
+			<div className='fav'>
 				<MovieListHeading heading='Movies' />
 				<hr/>
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
@@ -71,8 +71,8 @@ import RemoveFavourites from './components/RemoveFavourites';
 					favouriteComponent={AddFavourites}
 				/>
 			</div>
-			<div className='row'>
-				<MovieListHeading heading='Favourites' />
+			<div className='fav'>
+				<MovieListHeading heading='My favourites' />
 			</div>
 			<div className='row'>
 				<MovieList
