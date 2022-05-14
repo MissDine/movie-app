@@ -72,9 +72,9 @@ import RemoveFavourites from './components/RemoveFavourites';
 				/>
 			</div>
 			<div className='fav'>
-				<MovieListHeading heading='My favourites' />
+				<MovieListHeading heading='My favourites'/>
 			</div>
-			<div className='row'>
+			<div>
 				<MovieList
 					movies={favourites}
 					handleFavouritesClick={removeFavouriteMovie}
